@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Bites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Main Container -->
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-1/5 bg-white p-6 border-r">
+            <h1 class="text-2xl font-bold mb-6">Bites</h1>
+            <nav>
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="flex items-center text-gray-600 hover:text-green-500">
+                        <span class="material-icons mr-2"></span>Dashboard</a></li>
+                    <li><a href="recipes.html" class="flex items-center text-gray-600 hover:text-green-500">
+                        <span class="material-icons mr-2"></span>Recipes</a></li>
+                    <li><a href="users.html" class="flex items-center text-green-500 font-semibold">
+                        <span class="material-icons mr-2"></span>User</a></li>
+                    <li><a href="reviews.html" class="flex items-center text-gray-600 hover:text-green-500">
+                        <span class="material-icons mr-2"></span>Reviews</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <!-- Header -->
+            <header class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold">General User</h2>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-lg">Filter</button>
+            </header>
+
+            <!-- User Table -->
+            <section class="bg-white p-6 rounded-lg shadow">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="border-b py-2 px-4 font-semibold">Name</th>
+                            <th class="border-b py-2 px-4 font-semibold">Role</th>
+                            <th class="border-b py-2 px-4 font-semibold">Joined</th>
+                            <th class="border-b py-2 px-4 font-semibold">Email</th>
+                            <th class="border-b py-2 px-4 font-semibold">Address</th>
+                            <th class="border-b py-2 px-4 font-semibold">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example User Row -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="border-b py-2 px-4">John Doe</td>
+                            <td class="border-b py-2 px-4">Admin</td>
+                            <td class="border-b py-2 px-4">1 March 2023</td>
+                            <td class="border-b py-2 px-4">johndoe@example.com</td>
+                            <td class="border-b py-2 px-4">123 Main Street</td>
+                            <td class="border-b py-2 px-4">
+                                <button class="text-blue-500 hover:underline">Edit</button>
+                                <button class="text-red-500 hover:underline ml-2">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border-b py-2 px-4">Jane Smith</td>
+                            <td class="border-b py-2 px-4">User</td>
+                            <td class="border-b py-2 px-4">15 February 2023</td>
+                            <td class="border-b py-2 px-4">janesmith@example.com</td>
+                            <td class="border-b py-2 px-4">456 Elm Avenue</td>
+                            <td class="border-b py-2 px-4">
+                                <button class="text-blue-500 hover:underline">Edit</button>
+                                <button class="text-red-500 hover:underline ml-2">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+     <!-- Footer Section -->
+     <footer class="bg-gray-200 p-6 text-center mt-8">
+        <h4 class="text-lg font-bold">My KITCHEN, My RULES</h4>
+        <p>Try new recipes, learn from your mistakes, and have fun!</p>
+        <form class="mt-4">
+            <input type="email" placeholder="Email us for more info" class="border rounded-lg px-4 py-2 w-1/2">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg">Send</button>
+        </form>
+    </footer>
+</main>
+</div>
+</body>
+</html>
